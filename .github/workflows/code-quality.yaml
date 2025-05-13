@@ -24,5 +24,8 @@ jobs:
           node-version: latest
           cache: "pnpm"
 
+      - name: Install dependencies
+        run: pnpm i
+
       - name: Check formatting
         run: pnpm ci:format
