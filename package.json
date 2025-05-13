@@ -12,8 +12,8 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "**/*": [
-      "pnpm format:write"
+    "**/*.{ts,tsx,json}": [
+      "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true"
     ]
   },
   "dependencies": {
