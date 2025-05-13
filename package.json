@@ -1,0 +1,41 @@
+{
+  "name": "horizon-modding-studio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "format:check": "biome check",
+    "format:write": "biome check --write",
+    "ci:format": "biome ci",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*": [
+      "pnpm format:write"
+    ]
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.5.0",
+    "@tauri-apps/plugin-opener": "^2.2.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sonner": "^2.0.3",
+    "wouter": "^3.7.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@tauri-apps/cli": "^2.5.0",
+    "@types/node": "^22.15.17",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.4.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "typescript": "~5.8.3",
+    "unocss": "^66.1.1",
+    "vite": "^6.3.5"
+  },
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
+}

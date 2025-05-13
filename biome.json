@@ -1,0 +1,31 @@
+{
+  "files": {
+    "ignore": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "node_modules/**/*",
+      "dist/**/*",
+      ".next/**/*",
+      "src-tauri/target/**/*",
+      "src-tauri/gen/**/*",
+      "next-env.d.ts"
+    ]
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "lineWidth": 120
+  },
+  "javascript": {
+    "formatter": {
+      "attributePosition": "multiline"
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
+    },
+    "linter": {
+      "enabled": true
+    }
+  }
+}
