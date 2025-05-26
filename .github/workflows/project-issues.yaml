@@ -4,16 +4,13 @@ on:
   issues:
     types:
       - opened
-      - labeled
 
 jobs:
   add-to-project:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@v1
+      - name: Add issue to project board
+        uses: actions/add-to-project@v1
         with:
-          project-url: https://github.com/orgs/axelNTI/projects/1
+          project-url: https://github.com/users/axelNTI/projects/3/settings
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          labeled: true
-          label-operator: OR
-          label: bug,needs-triage
