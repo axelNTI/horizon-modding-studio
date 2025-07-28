@@ -27,7 +27,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@tauri-apps/cli": "^2.5.0",
-    "@types/node": "^22.15.21",
+    "@types/node": "^24.1.0",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "@vitejs/plugin-react": "^4.4.1",
