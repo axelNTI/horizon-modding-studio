@@ -1,7 +1,7 @@
 // typescript
 import { platform } from "@tauri-apps/plugin-os";
 
-export function detectOS():
+const detectOS = ():
   | "macos"
   | "windows"
   | "linux"
@@ -12,10 +12,26 @@ export function detectOS():
   | "openbsd"
   | "solaris"
   | "android"
-  | "unknown" {
+  | "unknown" => {
   try {
     return platform();
   } catch {
     return "unknown"; // not running in Tauri or API failed
   }
-}
+};
+
+const baseDir = {
+  macos: "~/Documents",
+  windows: "~/Documents",
+  linux: "~/.local/share",
+};
+
+const paths = {
+  macos: `${baseDir.macos}/Paradox Interactive/Stellaris/mod`,
+  windows: `${baseDir.windows}/Paradox Interactive/Stellaris/mod`,
+  linux: `${baseDir.linux}/Paradox Interactive/Stellaris/mod`,
+};
+
+export const loadMods = async () => {
+  const os = detectOS();
+};
