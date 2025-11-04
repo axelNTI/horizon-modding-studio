@@ -15,3 +15,13 @@ export type Response = Promise<
       };
     }
 >;
+
+export type Mod = {
+  name: string;
+  path: string;
+  dependencies?: string[];
+  tags?: string[];
+  picture?: string;
+  remote_file_id?: string;
+  supported_version?: string;
+};
