@@ -1,4 +1,4 @@
-export type TauriResponse = Promise<
+export type Response = Promise<
   | {
       success: {
         code: number;
