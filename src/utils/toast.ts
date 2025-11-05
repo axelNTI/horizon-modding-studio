@@ -18,7 +18,7 @@ interface ToastConfig {
 
 /**
  * Displays a toast notification based on the promise result.
- * @param {Promise<Response>} promise - The promise to handle.
+ * @param {Response} promise - The promise to handle.
  * @param {string} loading - The loading message.
  * @param {string | boolean} success - The success message or a boolean indicating whether to show the message from the promise.
  */
