@@ -2,23 +2,67 @@
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "default",
   "description": "Capability for the main window",
-  "windows": ["main"],
+  "windows": ["main", "horizon-modding-studio"],
   "permissions": [
     "core:default",
     "opener:default",
     "fs:default",
-    "fs:allow-document-read",
-    "fs:allow-document-read-recursive",
-    "fs:allow-document-write",
-    "fs:allow-document-write-recursive",
-    "fs:allow-home-read",
-    "fs:allow-home-read-recursive",
-    "fs:allow-home-write",
-    "fs:allow-home-write-recursive",
-    "os:default",
+    {
+      "identifier": "fs:allow-read-dir",
+      "allow": [
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+      ]
+    },
     {
       "identifier": "fs:allow-mkdir",
-      "allow": ["$HOME/**", "$DOCUMENTS/**"]
-    }
+      "allow": [
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+      ]
+    },
+    {
+      "identifier": "fs:allow-read",
+      "allow": [
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+      ]
+    },
+    {
+      "identifier": "fs:allow-write",
+      "allow": [
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+      ]
+    },
+    {
+      "identifier": "fs:allow-remove",
+      "allow": [
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+      ]
+    },
+    {
+      "identifier": "fs:allow-copy-file",
+      "allow": [
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+      ]
+    },
+    {
+      "identifier": "fs:allow-rename",
+      "allow": [
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+      ]
+    },
+    {
+      "identifier": "fs:allow-read-file",
+      "allow": [
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+      ]
+    },
+    "os:default"
   ]
 }
