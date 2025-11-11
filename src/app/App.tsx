@@ -3,6 +3,10 @@ import { loadMods } from "@/utils/load-mods";
 import { toast } from "@/utils/toast";
 import { useEffect, useState } from "react";
 
+import "@unocss/reset/eric-meyer.css";
+import "@unocss/reset/sanitize/sanitize.css";
+import "virtual:uno.css";
+
 export default () => {
   const [mods, setMods] = useState<Mod[]>([]);
   const [loading, setLoading] = useState(true);
