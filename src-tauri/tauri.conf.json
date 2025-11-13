@@ -13,7 +13,7 @@
   "app": {
     "windows": [
       {
-        "title": "horizon-modding-studio",
+        "title": "Horizon Modding Studio",
         "width": 1200,
         "height": 800
       }
