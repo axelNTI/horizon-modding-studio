@@ -11,56 +11,72 @@
       "identifier": "fs:allow-read-dir",
       "allow": [
         "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
-        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod/**"
       ]
     },
     {
       "identifier": "fs:allow-mkdir",
       "allow": [
         "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
-        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod/**"
       ]
     },
     {
       "identifier": "fs:allow-read",
       "allow": [
         "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
-        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod/**"
       ]
     },
     {
       "identifier": "fs:allow-write",
       "allow": [
         "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
-        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod/**"
       ]
     },
     {
       "identifier": "fs:allow-remove",
       "allow": [
         "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
-        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod/**"
       ]
     },
     {
       "identifier": "fs:allow-copy-file",
       "allow": [
         "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
-        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod/**"
       ]
     },
     {
       "identifier": "fs:allow-rename",
       "allow": [
         "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
-        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod/**"
       ]
     },
     {
       "identifier": "fs:allow-read-file",
       "allow": [
         "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod",
-        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**"
+        "/home/taxel/.local/share/Paradox Interactive/Stellaris/mod/**",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod",
+        "$DOCUMENT/Paradox Interactive/Stellaris/mod/**"
       ]
     },
     "os:default"
