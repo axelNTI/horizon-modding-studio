@@ -3,6 +3,8 @@ import { loadMods } from "@/utils/load-mods";
 import { toast } from "@/utils/toast";
 import { useEffect, useState } from "react";
 
+import ModCard from "@/app/components/ModCard";
+
 import "@unocss/reset/eric-meyer.css";
 import "@unocss/reset/sanitize/sanitize.css";
 import "virtual:uno.css";
@@ -34,11 +36,12 @@ export default () => {
       ) : !error ? (
         <>
           <p>{mods.length} mod(s) found</p>
-          <ul>
-            {mods.map((mod) => (
-              <li key={mod.name}>{mod.name}</li>
-            ))}
-          </ul>
+          {mods.map((mod) => (
+            <ModCard
+              key={mod.name}
+              mod={mod}
+            />
+          ))}
         </>
       ) : (
         <p>{error}</p>
