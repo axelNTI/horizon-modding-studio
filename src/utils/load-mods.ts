@@ -4,7 +4,7 @@ import { join } from "@tauri-apps/api/path";
 import { readDir, readFile } from "@tauri-apps/plugin-fs";
 import { platform } from "@tauri-apps/plugin-os";
 
-const path = (() => {
+const path = (async () => {
   const paths = {
     macos: "/Paradox Interactive/Stellaris/mod",
     windows: "/Paradox Interactive/Stellaris/mod",
@@ -12,8 +12,8 @@ const path = (() => {
   };
 
   const os = platform();
-  const baseDir = os === "linux" ? homeDir() : documentDir();
-  return baseDir.then((base) => join(base, paths[os as keyof typeof paths]));
+  const baseDir = os === "linux" ? await homeDir() : await documentDir();
+  return await join(baseDir, paths[os as keyof typeof paths]);
 })();
 
 export const loadMods = async (): Response => {
