@@ -3,8 +3,9 @@ import { Route, Switch } from "wouter";
 
 export default () => (
   <Switch>
-    <Route path="/">
-      <Main />
-    </Route>
+    <Route
+      path="/"
+      component={Main}
+    />
   </Switch>
 );
