@@ -39,6 +39,11 @@ export const loadMods = async (): Response => {
       return {
         name: raw.match(/name="([^"]+)"/)?.[1] || "",
         path: raw.match(/path="([^"]+)"/)?.[1] || "",
+        local_path:
+          raw
+            .match(/path="([^"]+)"/)?.[1]
+            ?.split("/")
+            .pop() || "",
         dependencies:
           (raw.match(/dependencies=\{([^}]+)\}/)?.[1] || "")
             .split("\n")
@@ -75,8 +80,7 @@ export const loadMods = async (): Response => {
 export const getImage = async (mod: Mod): Promise<string | null> => {
   if (!mod.picture) return null;
   try {
-    const pathParts = mod.path.split("/");
-    const imagePath = await join(await path, pathParts[pathParts.length - 1], mod.picture);
+    const imagePath = await join(await path, mod.local_path, mod.picture);
     const imageContent = await readFile(imagePath);
     const byteArray =
       typeof imageContent === "string" ? new TextEncoder().encode(imageContent) : (imageContent as Uint8Array);

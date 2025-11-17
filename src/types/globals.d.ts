@@ -19,6 +19,7 @@ export type Response = Promise<
 export type Mod = {
   name: string;
   path: string;
+  local_path: string;
   dependencies?: string[];
   tags?: string[];
   picture?: string;
