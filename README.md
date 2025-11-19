@@ -1,9 +1,18 @@
 # Horizon Modding Studio
 
+## Compatability
+
+| OS      | Compatability    |
+|---------|------------------|
+| Windows | Fully tested     |
+| Linux   | Partially tested |
+| MacOS   | Untested         |
+| Other   | Not supported    |
+
 ## Setup
 1. The following external dependencies are required before continuing with the setup:
     - [Node.js](https://nodejs.org/en/download)
-    - [pnpm](https://pnpm.io/installation)Horizon Modding Studio
+    - [pnpm](https://pnpm.io/installation)
 
     - [Rust & Tauri](https://v2.tauri.app/start/prerequisites/)
 
