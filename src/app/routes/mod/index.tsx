@@ -3,5 +3,6 @@ interface ModPageProps {
 }
 
 export default ({ local_path }: ModPageProps) => {
-  return <p>{decodeURIComponent(local_path)}</p>;
+  const path = decodeURIComponent(local_path);
+  return <p>{path}</p>;
 };
