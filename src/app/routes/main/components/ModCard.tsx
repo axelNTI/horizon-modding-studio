@@ -32,18 +32,10 @@ export default ({ mod }: ModCardProps) => {
       )}
       <div>
         <h2>{mod.name}</h2>
-        <p>{encodeURIComponent(mod.path)}</p>
         {mod.supported_version && <p>Supported Version: {mod.supported_version}</p>}
         {mod.tags && mod.tags.length > 0 && <p>Tags: {mod.tags.join(", ")}</p>}
         {mod.dependencies && mod.dependencies.length > 0 && <p>Dependencies: {mod.dependencies.join(", ")}</p>}
-        <Link href={`/mod/${encodeURIComponent(mod.local_path)}`}>
-          <button
-            type="button"
-            className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-          >
-            View Details
-          </button>
-        </Link>
+        <Link href={`/mod/${encodeURIComponent(mod.local_path)}`}>Edit Mod</Link>
       </div>
     </div>
   );
